@@ -147,7 +147,7 @@ public class LayersSourceGenerator : IIncrementalGenerator {
             }
             var indent = new string(' ', indentation * 4 + 4);
             var maskValue = (1) << (i-1);
-            sb.AppendLine($"{indent}public const uint {layer}Mask = 0x{maskValue:X};");
+            sb.AppendLine($"{indent}public const uint {Utils.MakeSafeIdentifier(layer)}Mask = 0x{maskValue:X};");
         }
 
         sb.AppendLine(new string(' ', indentation * 4) + "}");

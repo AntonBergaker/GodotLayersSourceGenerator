@@ -14,6 +14,9 @@ public partial class TestScript : Node {
         Debug.Assert(MaskForLayer(1) == LayerNames.Physics2D.PhyLayer1Mask);
         Debug.Assert(MaskForLayer(2) == LayerNames.Physics2D.PhyLayer2Mask);
         Debug.Assert(MaskForLayer(4) == LayerNames.Physics2D.PhySkipTo4Mask);
+        Debug.Assert(MaskForLayer(5) == LayerNames.Physics2D.Layer5WithSpaceMask);
+        Debug.Assert(MaskForLayer(6) == LayerNames.Physics2D.Lowercase6Mask);
+        Debug.Assert(MaskForLayer(7) == LayerNames.Physics2D._7IsTheLayerMask);
 
         Debug.Assert(MaskForLayer(1) == LayerNames.Navigation2D.Nav1Mask);
         Debug.Assert(MaskForLayer(2) == LayerNames.Navigation2D.Nav2Mask);

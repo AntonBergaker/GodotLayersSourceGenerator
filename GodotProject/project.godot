@@ -1,0 +1,44 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Godot Project"
+run/main_scene="res://test_scene.tscn"
+config/features=PackedStringArray("4.1", "C#", "Mobile")
+config/icon="res://icon.svg"
+
+[dotnet]
+
+project/assembly_name="Godot Project"
+
+[layer_names]
+
+2d_render/layer_1="ImLayer1"
+2d_render/layer_2="ImLayer2"
+3d_render/layer_2="Render2"
+2d_render/layer_4="SkipTo4"
+2d_render/layer_10="SkipAllTheWayTo10"
+2d_physics/layer_1="PhyLayer1"
+2d_navigation/layer_1="Nav1"
+3d_physics/layer_1="Phy3D1"
+3d_navigation/layer_1="Nav3DLayer1"
+2d_physics/layer_2="PhyLayer2"
+2d_navigation/layer_2="Nav2"
+3d_navigation/layer_2="Nav3DLayer2"
+3d_physics/layer_3="Phy3D3"
+3d_navigation/layer_3="Nav3DLayer3"
+2d_physics/layer_4="PhySkipTo4"
+avoidance/layer_1="Avoid1"
+avoidance/layer_2="Avoid2"
+
+[rendering]
+
+renderer/rendering_method="mobile"

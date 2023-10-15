@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GodotLayersSourceGenerator", "GodotLayersSourceGenerator.csproj", "{D86E71BD-05CA-47B4-A15B-AC6D59219C4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		ExportDebug|Any CPU = ExportDebug|Any CPU
+		ExportRelease|Any CPU = ExportRelease|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D86E71BD-05CA-47B4-A15B-AC6D59219C4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D86E71BD-05CA-47B4-A15B-AC6D59219C4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D86E71BD-05CA-47B4-A15B-AC6D59219C4E}.ExportDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D86E71BD-05CA-47B4-A15B-AC6D59219C4E}.ExportDebug|Any CPU.Build.0 = Debug|Any CPU
+		{D86E71BD-05CA-47B4-A15B-AC6D59219C4E}.ExportRelease|Any CPU.ActiveCfg = Release|Any CPU
+		{D86E71BD-05CA-47B4-A15B-AC6D59219C4E}.ExportRelease|Any CPU.Build.0 = Release|Any CPU
+		{D86E71BD-05CA-47B4-A15B-AC6D59219C4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D86E71BD-05CA-47B4-A15B-AC6D59219C4E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C0DBBBCE-E18D-47B2-9707-7FEB6955F717}
+	EndGlobalSection
+EndGlobal

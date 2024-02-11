@@ -145,9 +145,14 @@ public class LayersSourceGenerator : IIncrementalGenerator {
             if (dict.TryGetValue(i, out var layer) == false) {
                 continue;
             }
+            var identifier = Utils.MakeSafeIdentifier(layer);
+            var index = i - 1;
             var indent = new string(' ', indentation * 4 + 4);
-            var maskValue = (1) << (i-1);
-            sb.AppendLine($"{indent}public const uint {Utils.MakeSafeIdentifier(layer)}Mask = 0x{maskValue:X};");
+
+            sb.AppendLine($"{indent}public const uint {identifier}Index = {index};");
+
+            var maskValue = 1 << index;
+            sb.AppendLine($"{indent}public const uint {identifier}Mask = 0x{maskValue:X};");
         }
 
         sb.AppendLine(new string(' ', indentation * 4) + "}");

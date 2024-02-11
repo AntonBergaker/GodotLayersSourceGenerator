@@ -1,14 +1,13 @@
-<Project Sdk="Godot.NET.Sdk/4.1.2">
-    <PropertyGroup>
-        <TargetFramework>net6.0</TargetFramework>
-        <EnableDynamicLoading>true</EnableDynamicLoading>
-        <RootNamespace>GodotProject</RootNamespace>
-    </PropertyGroup>
-    <ItemGroup>
-		<AdditionalFiles Include="project.godot" />
-    </ItemGroup>
-
-    <ItemGroup>
-        <ProjectReference Include="..\GodotLayersSourceGenerator\GodotLayersSourceGenerator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
-    </ItemGroup>
+<Project Sdk="Godot.NET.Sdk/4.2.0">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <RootNamespace>GodotProject</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <AdditionalFiles Include="project.godot" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GodotLayersSourceGenerator\GodotLayersSourceGenerator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+  </ItemGroup>
 </Project>

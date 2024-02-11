@@ -4,6 +4,7 @@ using System.Diagnostics;
 public partial class TestScript : Node {
 
     public override void _Ready() {
+        // Check masks
         Debug.Assert(MaskForLayer(1) == LayerNames.Render2D.ImLayer1Mask);
         Debug.Assert(MaskForLayer(2) == LayerNames.Render2D.ImLayer2Mask);
         Debug.Assert(MaskForLayer(4) == LayerNames.Render2D.SkipTo4Mask);
@@ -30,6 +31,12 @@ public partial class TestScript : Node {
 
         Debug.Assert(MaskForLayer(1) == LayerNames.Avoidance.Avoid1Mask);
         Debug.Assert(MaskForLayer(2) == LayerNames.Avoidance.Avoid2Mask);
+
+        // Check indexes. Yes they're off by 1. It's very confusing.
+        // But it makes it work with functions like CanvasLayer.SetVisibilityLayerBit()
+        GD.Print(LayerNames.Render2D.ImLayer1Index);
+        Debug.Assert(0 == LayerNames.Render2D.ImLayer1Index);
+        Debug.Assert(1 == LayerNames.Render2D.ImLayer2Index);
     }
 
     private uint MaskForLayer(int index) {

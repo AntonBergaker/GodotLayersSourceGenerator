@@ -2,19 +2,18 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
 	<metadata>
 		<id>GodotLayersSourceGenerator</id>
-		<version>1.0.1</version>
+		<version>1.1.1</version>
 		<title>Godot Layers SourceGenerator</title>
 		<authors>AntonBergåker</authors>
 		<description>Exposes the various Godot layer names as constants using a source generator.</description>
-		<summary>Source generator for binary serialization for structs and classes.</summary>
+		<summary>Exposes the various Godot layer names as constants using a source generator.</summary>
 		<repository type="git" url="https://github.com/AntonBergaker/GodotLayersSourceGenerator.git" />
 		<projectUrl>https://github.com/AntonBergaker/GodotLayersSourceGenerator</projectUrl>
 		<license type="expression">MIT</license>
-		<dependencies>
-			<group targetFramework="netstandard2.0" />
-		</dependencies>
+		<readme>docs\README.md</readme>
 	</metadata>
 	<files>
 		<file src="bin\Debug\netstandard2.0\GodotLayersSourceGenerator.dll" target="analyzers\dotnet\cs" />
+		<file src="..\README.md" target="docs\" />
 	</files>
 </package>
